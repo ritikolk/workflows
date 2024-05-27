@@ -1,8 +1,8 @@
 - name: Deploy React to GitHub Pages
   uses: bitovi/github-actions-react-to-github-pages@v1.2.3
   with:
-    checkout: null
-    path: null
-    install_command: null
-    build_command: null
-    caching: null
+    checkout: 'true'
+    path: build
+    install_command: npm install
+    build_command: npm run build
+    caching: 'true'
